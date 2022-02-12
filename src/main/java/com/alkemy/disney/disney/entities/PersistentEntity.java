@@ -8,7 +8,7 @@ import javax.persistence.*;
 @MappedSuperclass
 @Setter
 @Getter
-public abstract class EntidadPersistente {
+public abstract class PersistentEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column

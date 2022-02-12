@@ -11,28 +11,28 @@ import java.util.Set;
 @Table(name = "personaje")
 @Setter
 @Getter
-public class Personaje extends Activable{
+public class Character extends Active {
 
     @Column(name = "imagen")
-    private String imagen;
+    private String image;
 
     @Column(name = "nombre")
-    private String nombre;
+    private String name;
 
     @Column(name = "edad")
-    private Integer edad;
+    private Integer age;
 
     @Column(name = "peso")
-    private Double peso;
+    private Double weight;
 
     @Column(name = "historia")
-    private String historia;
+    private String history;
 
     @ManyToMany(mappedBy = "personajes", cascade = CascadeType.ALL)
-    private Set<Pelicula> peliculas;
+    private Set<Movie> movies;
 
-    public Personaje(){
-        this.setActivo(true);
-        peliculas = new HashSet<>();
+    public Character(){
+        this.setActive(true);
+        movies = new HashSet<>();
     }
 }

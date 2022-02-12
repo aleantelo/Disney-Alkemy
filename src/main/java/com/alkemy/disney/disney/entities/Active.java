@@ -9,8 +9,8 @@ import javax.persistence.MappedSuperclass;
 @MappedSuperclass
 @Setter
 @Getter
-public abstract class Activable extends EntidadPersistente {
+public abstract class Active extends PersistentEntity {
 
     @Column(name = "activo")
-    private Boolean activo;
+    private Boolean active;
 }

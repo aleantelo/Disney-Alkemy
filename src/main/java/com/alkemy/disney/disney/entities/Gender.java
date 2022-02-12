@@ -12,12 +12,12 @@ import javax.persistence.Table;
 @Table(name = "genero")
 @Setter
 @Getter
-public class Genero extends Activable{
+public class Gender extends Active {
 
     @Column(name = "nombre")
-    private String nombre;
+    private String name;
 
     @Column(name = "imagen")
-    private String imagen;
+    private String image;
 
 }
