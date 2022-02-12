@@ -28,7 +28,7 @@ public class Character extends Active {
     @Column(name = "historia")
     private String history;
 
-    @ManyToMany(mappedBy = "personajes", cascade = CascadeType.ALL)
+    @ManyToMany(mappedBy = "characters", cascade = CascadeType.ALL)
     private Set<Movie> movies;
 
     public Character(){
