@@ -12,5 +12,5 @@ public abstract class PersistentEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column
-    private Long id;
+    private Long id;  //ID
 }

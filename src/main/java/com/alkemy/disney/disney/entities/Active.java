@@ -12,5 +12,5 @@ import javax.persistence.MappedSuperclass;
 public abstract class Active extends PersistentEntity {
 
     @Column(name = "activo")
-    private Boolean active;
+    private Boolean active;    //Atributo que representa si esta borrado o no. (baja logica)
 }
