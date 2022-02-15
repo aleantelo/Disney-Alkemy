@@ -1,16 +1,24 @@
-package com.alkemy.disney.disney.entities;
+package com.alkemy.disney.entities;
+
 
 import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
 
-@MappedSuperclass
+@Entity
+@Table(name = "gender")
 @Setter
 @Getter
-public abstract class PersistentEntity {
+public class Gender {
+
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column
-    private Long id;  //ID
+    private Long id;
+
+    private String name;
+
+    private String image;
+
 }
