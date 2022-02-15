@@ -17,7 +17,7 @@ Y el código está organizado así:
 https://github.com/aleantelo/Disney-Alkemy.git
 ```
 
-**2. Configurar archivo de configuracion ->  application.properties**
+**2. Ver archivo de configuracion ->  application.properties**
 + abrir `src/main/resources/application.properties`
 
 + modificar 
