@@ -30,7 +30,8 @@ public class Character {
 
     @ManyToMany(mappedBy = "characters",
             cascade = {
-                CascadeType.ALL
+                    CascadeType.PERSIST,
+                    CascadeType.MERGE
             }
     )
     private Set<Movie> movies;
