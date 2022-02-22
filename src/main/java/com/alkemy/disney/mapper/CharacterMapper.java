@@ -23,6 +23,7 @@ public class CharacterMapper {
         character.setHistory(characterDTO.getHistory());
         character.setWeight(characterDTO.getWeight());
         character.setMovies(characterDTO.getMovies());
+        character.setId(characterDTO.getId());
 
         return character;
     }

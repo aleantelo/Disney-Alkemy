@@ -44,4 +44,21 @@ public class CharacterServiceImpl implements CharacterService {
         return characterDTO;
     }
 
+    @Override
+    public void delete(Long id) {
+
+        characterRepository.deleteById(id);
+    }
+
+    @Override
+    public CharacterDTO modify(CharacterDTO characterDTO) {
+
+        Character savedCharacter = characterMapper.characterDtoToEntity(characterDTO);
+
+        characterRepository.save(savedCharacter);
+
+        CharacterDTO result = characterMapper.characterEntityToDto(savedCharacter);
+        return result;
+    }
+
 }
