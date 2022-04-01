@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.alkemy</groupId>
 	<artifactId>disney</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>3.0-RC1</version>
 	<name>disney</name>
 	<description>Proyecto de Disney pre-aceleracion Alkemy</description>
 	<properties>
