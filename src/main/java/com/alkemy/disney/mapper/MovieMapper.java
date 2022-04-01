@@ -33,7 +33,7 @@ public class MovieMapper {
     }
 
     public MovieBasicDTO movieEntityToBasicDTO(Movie movie){
-
+//asdd
         MovieBasicDTO movieBasicDTO = new MovieBasicDTO();
 
         movieBasicDTO.setImage(movie.getImage());
