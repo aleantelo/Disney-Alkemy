@@ -28,7 +28,7 @@ public class MovieMapper {
         //movie.setCreationDate(movieDTO.getCreationDate()); FALTA FORMATEAR LA FECHA
         movie.setTitle(movieDTO.getTitle());
         //TODO:AGREGAR LOS CHARACTERS
-
+//chau
         return movie;
     }
 
