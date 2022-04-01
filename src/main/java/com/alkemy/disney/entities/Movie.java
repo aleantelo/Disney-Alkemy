@@ -5,7 +5,9 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -40,7 +42,7 @@ public class Movie {
 
     @ManyToMany(
             targetEntity = Character.class,
-            fetch = FetchType.EAGER,
+            fetch = FetchType.LAZY,
             cascade = {
                     CascadeType.PERSIST,
                     CascadeType.MERGE
@@ -51,10 +53,10 @@ public class Movie {
             joinColumns = {@JoinColumn(name = "movie_id")},
             inverseJoinColumns = {@JoinColumn(name = "charact_id")}
     )
-    private Set<Character> characters;
+    private List<Character> characters;
 
     public Movie(){
-        characters = new HashSet<>();
+        characters = new ArrayList<>();
     }
 
 }

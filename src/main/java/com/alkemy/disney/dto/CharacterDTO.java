@@ -4,6 +4,7 @@ import com.alkemy.disney.entities.Movie;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.List;
 import java.util.Set;
 
 
@@ -23,5 +24,5 @@ public class CharacterDTO {
 
     private String history;
 
-    private Set<Movie> movies;
+    private List<MovieDTO> movies;
 }
